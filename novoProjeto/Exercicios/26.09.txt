@@ -1,0 +1,57 @@
+function inverterNumero(numero){
+  return numero.toString().split('').reverse().join('')
+}
+
+console.log(inverterNumero(2345));
+
+-------------------------------------------------------------------------
+
+function pegaIniciais(nomeSobrenome){
+  let letra1 = nomeSobrenome.substr(0,1);
+  let posicaoEspaco = nomeSobrenome.indexOf(' ');
+  let letra2 = nomeSobrenome.substr(posicaoEspaco + 1,1);
+  return letra1 + letra2;
+}
+
+console.log(pegaIniciais('Dayane Alves'))
+
+------------------------------------------------------------------------
+
+function ordemAlfabetica(str){
+  let arr = str.split('');
+  let sorted = arr.sort();
+  return sorted.join('');
+}
+
+console.log(ordemAlfabetica('dayane'));
+-----------------------------------------------------------------------
+
+**Mostrar iniciais do nome***
+
+/*function pegaIniciais(nomeSobrenome){
+  let letra1 = nomeSobrenome.substr(0,1);
+  let posicaoEspaco = nomeSobrenome.indexOf(' ');
+  let letra2 = nomeSobrenome.substr(posicaoEspaco + 1,1);
+  return letra1 + letra2;
+}
+
+console.log(pegaIniciais('Dayane Alves'))*/
+
+function pegaIniciais2(nomeSobrenome){
+  let letra1 = nomeSobrenome.substring(0,1);
+  let posicaoEspaco = nomeSobrenome.indexOf(' ');
+  let letra2 = nomeSobrenome.substring(posicaoEspaco+1, posicaoEspaco+2);
+  return letra1+letra2;
+}
+ console.log(pegaIniciais2('anazinha Zicka'));
+
+--------------------------------------------------------------------------
+
+***Sortear número aleatorio***
+
+function sortearBilhete(bilhetes){
+    let resultado = Math.floor(Math.random()* bilhetes);
+  return resultado;
+}
+
+  console.log(sortearBilhete(567));

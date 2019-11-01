@@ -1,0 +1,23 @@
+/*alert ("Vamos calcular sua idade")
+alert ("Pronto?")
+alert ("Mesmo?")
+alert ("Certeza?")
+let nasc = parseInt(prompt (" Digite sua data de nascimento"))
+let anoAtual = parseInt(prompt ("Digite o ano atual"))
+let result = anoAtual - nasc 
+
+------------------------------------------------------------------------------------
+
+
+alert( "sua idade é: " + result) */
+ 
+alert("calculando a média")
+
+let num1 = parseInt(prompt("Primeiro número"))
+let num2 = parseInt(prompt("Segundo número"))
+let num3 = parseInt(prompt("terceiro número"))
+
+alert ((num1 + num2 + num3)/2)
+
+------------------------------------------------------------------------------------
+

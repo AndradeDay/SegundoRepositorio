@@ -1,0 +1,146 @@
+//Faça um algoritmo que imprima números inteiros de n a 1
+
+for (let n = 10; n >= 1; n--){
+   console.log(n);
+}
+
+----------------------------------------------------------------------
+
+//Faça um algoritmo que imprima apenas os números ímpares de 1 a 100; (do-while)
+
+let numero = 1;
+
+do { 
+   if (numero % 2 != 0){
+      console.log(numero);
+   }
+   numero++
+ } while (numero < 100);
+
+
+---------------------------------------------------------------------------
+
+//Faça um algoritmo que imprima a soma dos números múltiplos de 3 e 5, menores que 1000.
+
+let soma = 0;
+
+for (let n = 1; n <= 100; n++) {
+   if ((n % 5 === 0) && (n % 3 === 0)) {
+      soma += n;
+      // console.log(n + ' ' + soma );
+   }
+}
+console.log(soma);
+
+-------------------------------------------------------------------------
+
+let mdc = 1;
+let divisor = 2;
+let x = 90;
+let y = 54;
+
+while (x > 1 && y > 1) {
+   if (x % divisor === 0 && y % divisor === 0) {
+      mdc *= divisor;
+      x /= divisor;
+      y /= divisor;
+   } else if (x % divisor === 0) {
+      x /= divisor;
+
+   } else if (y % divisor === 0) {
+      x /= divisor;
+   } else {
+      divisor++;
+   }
+}
+console.log(mdc);
+-----------------------------------------------------------------------------
+
+let mdc = 1;
+let divisor = 2;
+let x = 90;
+let y = 54;
+
+while (x > 1 && y > 1) {
+   if (x % divisor === 0 && y % divisor === 0) {
+      mdc *= divisor;
+      x /= divisor;
+      y /= divisor;
+   } else if (x % divisor === 0) {
+      x /= divisor;
+
+   } else if (y % divisor === 0) {
+      x /= divisor;
+   } else {
+      divisor++;
+   }
+}
+console.log(mdc);
+--------------------------------------------------------------------------------------
+
+
+// 5. Seu Miguel da vendinha da esquina, não sabe multiplicar. Faça para ele um programa que dado um número, print (console.log) a tabuada do mesmo de 1 a 10.
+
+let num = 5;
+
+for (let divisor = 1; divisor <= 10; divisor++){
+   console.log(divisor + ' X ' + num + ' : ' + num*divisor);
+}
+
+---------------------------------------------------------------------------------------------
+
+6. Faça um programa que leia 5 números e informe o maior número.
+
+let arr = [8,5,43,567,423,77675,787];
+let max = 0;
+
+for( let i = 0; i < arr.length; i++){
+   if(max < arr[i]){
+      max = arr[i];
+   }
+  
+}
+
+console.log(max);
+
+--------------------------------------------------------------------------------------------
+
+6.Faça um programa que leia 5 números e informe o menor número.
+
+let arr = [7, 9, 32, -67, -54, -321];
+let menor = 0;
+
+for (let x = 0; x < arr.length; x++) {
+   if (menor > arr[x]) {
+      menor = arr[x];
+   }
+}
+console.log(menor);
+---------------------------------------------------------------------------------------------
+
+8. execercicio do monoel joaquim 
+
+let preco = 1.99
+
+for( let x = 1; x < 50; x++){
+   console.log(x * preco);
+}
+-----------------------------------------------------------------------------------------------
+// 9. Faça um programa que peça um número inteiro e determine se ele é ou não um número primo. Um número primo é aquele que é divisível somente por ele mesmo e por 1.
+
+let numero = 22;
+let divisor = 0
+
+for (let i = 1; i <= numero; i++) {
+   if (numero % i === 0) {
+      divisor++
+      
+   }
+}
+if(divisor === 2){
+   console.log(numero + ' é primo');
+}else{
+   console.log(numero + ' não é primo');
+}
+console.log(divisor);
+------------------------------------------------------------------------------------------------
